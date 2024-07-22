@@ -15,7 +15,7 @@ export const Statistic = (props: Props) => {
     <Box 
       bg="bg-surface" 
       borderRadius="lg" 
-      boxShadow="sm" 
+      boxShadow="md" 
       _hover={{ bg: "orange.100" }}
       {...boxProps}
     >
