@@ -43,7 +43,7 @@ const HorizontalImageContext: FC<Props> = ({
       <AccordionItem>
         <AccordionButton w={"full"}>
           <Card direction={"row"} w={"full"} variant={"unstyled"} p={4}>
-            {image_src && (
+            {!!image_src && (
               <Image w={"25%"} objectFit="cover" src={image_src} alt={title} />
             )}
             <Stack p={4}>
