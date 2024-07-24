@@ -23,7 +23,7 @@ export const Statistic = (props: Props) => {
         <Stack>
           <HStack justify="space-between">
             <Text fontSize="sm" color="muted">
-              {props.label}
+              {props.label && props.label}
             </Text>
           </HStack>
           <HStack justify="space-between">
