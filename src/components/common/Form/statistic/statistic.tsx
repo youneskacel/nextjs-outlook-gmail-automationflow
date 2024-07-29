@@ -11,6 +11,7 @@ interface Props {
 }
 export const Statistic = (props: Props) => {
   const { ...boxProps } = props
+  // Statistics box
   return (
     <Box 
       bg="bg-surface" 
