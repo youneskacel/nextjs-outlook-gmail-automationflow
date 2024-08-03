@@ -18,10 +18,10 @@ const getAppToken = async (
      const {data,error} = await supabaseClient.from('account_user_token')
                                 .select('user_id, type, token, expired_at')
                                 .match({'user_id':id,'type':type})
-                                .single()
+                                .single();
                                  
      if (error) {
-        console.log(error)
+        console.error(error)
         const msg = {
             status: 500,
             message: "Error fetching test",
